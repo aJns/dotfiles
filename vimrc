@@ -24,6 +24,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/simple-pairs'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'lervag/vimtex'
 
 " vim-snipmate with dependencies
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -35,6 +36,7 @@ Plugin 'honza/vim-snippets'
 " Colorschemes etc
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'andrwb/vim-lapis256'
+Plugin 'vim-scripts/Liquid-Carbon'
 
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
@@ -72,7 +74,8 @@ filetype plugin indent on    " required
 
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
-colorscheme lapis256        " set colorscheme
+colorscheme liquidcarbon    " set colorscheme
+set background=dark         " ensure dark background
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
 set nohlsearch              " Don't continue to highlight searched phrases.
@@ -87,4 +90,4 @@ set shiftround              " always indent/outdent to the nearest tabstop
 set expandtab               " use spaces instead of tabs
 set smarttab                " use tabs at the start of a line, spaces elsewhere
 set nowrap                  " don't wrap text
-
+set colorcolumn=80          " Shows a "margin" at 80 chars
