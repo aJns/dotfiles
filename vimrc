@@ -74,7 +74,7 @@ filetype plugin indent on    " required
 
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
-colorscheme liquidcarbon    " set colorscheme
+colorscheme lapis256        " set colorscheme
 set background=dark         " ensure dark background
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
