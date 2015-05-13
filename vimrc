@@ -17,14 +17,15 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'Valloric/YouCompleteMe'
 
 " My own set
-Plugin 'fholgado/minibufexpl.vim'
+Plugin 'fholgado/minibufexpl.vim'   " "tab" support
 Plugin 'wincent/Command-T'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-scripts/simple-pairs'
+Plugin 'tpope/vim-fugitive'         " git support
+Plugin 'scrooloose/nerdtree'        " file browser
+Plugin 'vim-scripts/simple-pairs'   " auto-pairs (for brackets etc)
 Plugin 'majutsushi/tagbar'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'lervag/vimtex'
+Plugin 'scrooloose/nerdcommenter'   " support for comment blocks
+Plugin 'lervag/vimtex'              " Latex plugin
+Plugin 'vim-scripts/c.vim'          " C++ plugin
 
 " vim-snipmate with dependencies
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -75,7 +76,7 @@ filetype plugin indent on    " required
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
 colorscheme lapis256        " set colorscheme
-set background=dark         " ensure dark background
+"set background=dark         " ensure dark background
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
 set nohlsearch              " Don't continue to highlight searched phrases.
