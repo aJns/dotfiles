@@ -11,21 +11,22 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Fennekki recommends
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-vinegar'
-Plugin 'tpope/vim-sleuth'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'       " syntax support
+Plugin 'tpope/vim-vinegar'          " enchances netrw (no need for NERDTree)
+Plugin 'tpope/vim-sleuth'           " checks file for tab settings etc
+Plugin 'Valloric/YouCompleteMe'     " auto-completion
 
 " My own set
 Plugin 'fholgado/minibufexpl.vim'   " "tab" support
-Plugin 'wincent/Command-T'
+Plugin 'wincent/Command-T'          " improves file searches
 Plugin 'tpope/vim-fugitive'         " git support
-Plugin 'scrooloose/nerdtree'        " file browser
+" Plugin 'scrooloose/nerdtree'        " file browser
 Plugin 'vim-scripts/simple-pairs'   " auto-pairs (for brackets etc)
-Plugin 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'          " shows classes and functions
 Plugin 'scrooloose/nerdcommenter'   " support for comment blocks
 Plugin 'lervag/vimtex'              " Latex plugin
 Plugin 'vim-scripts/c.vim'          " C++ plugin
+Plugin 'ervandew/eclim'             " eclipse for vim, Java support
 
 " vim-snipmate with dependencies
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -92,3 +93,5 @@ set expandtab               " use spaces instead of tabs
 set smarttab                " use tabs at the start of a line, spaces elsewhere
 set nowrap                  " don't wrap text
 set colorcolumn=80          " Shows a "margin" at 80 chars
+
+let NERDTreeHijackNetrw=1
