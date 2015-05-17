@@ -10,7 +10,7 @@
 dir=~/dotfiles  # dotfiles directory
 olddir=~/dotfiles_old   # old dotfiles backup directory
 # list of files/folders to symlink in homdir
-files="bashrc vimrc vim gvimrc Xresources i3 i3status.conf"
+files="bashrc vimrc gvimrc Xresources i3 i3status.conf"
 
 ##########
 

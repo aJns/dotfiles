@@ -27,6 +27,7 @@ Plugin 'scrooloose/nerdcommenter'   " support for comment blocks
 Plugin 'lervag/vimtex'              " Latex plugin
 Plugin 'vim-scripts/c.vim'          " C++ plugin
 Plugin 'ervandew/eclim'             " eclipse for vim, Java support
+Plugin 'bling/vim-airline'          " cool looking statusbar #bling
 
 " vim-snipmate with dependencies
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -77,7 +78,7 @@ filetype plugin indent on    " required
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
 colorscheme lapis256        " set colorscheme
-"set background=dark         " ensure dark background
+set background=dark         " ensure dark background
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
 set nohlsearch              " Don't continue to highlight searched phrases.
