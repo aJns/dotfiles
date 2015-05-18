@@ -10,9 +10,9 @@
 dir=~/dotfiles  # dotfiles directory
 olddir=~/dotfiles_old   # old dotfiles backup directory
 # list of files/folders to symlink in homdir
-files="bashrc vimrc gvimrc Xresources i3 i3status.conf config/fontconfig/fonts.conf"
+files="bashrc vimrc gvimrc Xresources i3 i3status.conf gtkrc-2.0 config/gtk-3.0/settings.ini config/fontconfig/fonts.conf"
 # list of parent directories that are needed
-parent_dirs="config/fontconfig"
+parent_dirs="config/fontconfig config/gtk-3.0"
 
 ##########
 
