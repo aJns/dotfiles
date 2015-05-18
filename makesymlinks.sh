@@ -10,7 +10,9 @@
 dir=~/dotfiles  # dotfiles directory
 olddir=~/dotfiles_old   # old dotfiles backup directory
 # list of files/folders to symlink in homdir
-files="bashrc vimrc gvimrc Xresources i3 i3status.conf"
+files="bashrc vimrc gvimrc Xresources i3 i3status.conf config/fontconfig/fonts.conf"
+# list of parent directories that are needed
+parent_dirs="config/fontconfig"
 
 ##########
 
@@ -23,6 +25,12 @@ echo "...done"
 echo "Changing to the $dir directory"
 cd $dir
 echo "...done"
+
+# create the needed parent directories
+for directory in $parent_dirs; do
+        echo "Creating $directory"
+        mkdir -p ~/.$directory
+done
 
 # move any existing dotfiles in homedir to dotfiles_old directory, 
 # then create symlinks 
