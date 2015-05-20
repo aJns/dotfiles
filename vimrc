@@ -60,6 +60,7 @@ Plugin 'vim-scripts/Liquid-Carbon'
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+set omnifunc=syntaxcomplete#Complete    " enables omni completion
 " " To ignore plugin indent changes, instead use:
 " "filetype plugin on
 " "
@@ -73,7 +74,6 @@ filetype plugin indent on    " required
 " "
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
-
 
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
