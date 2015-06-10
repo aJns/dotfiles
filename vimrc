@@ -29,6 +29,7 @@ Plugin 'vim-scripts/c.vim'          " C++ plugin
 Plugin 'ervandew/eclim'             " eclipse for vim, Java support
 Plugin 'bling/vim-airline'          " cool looking statusbar #bling
 Plugin 'neilagabriel/vim-geeknote'  " Geeknote integration
+Plugin 'tfnico/vim-gradle'          " gradle integration
 
 " vim-snipmate with dependencies
 Plugin 'MarcWeber/vim-addon-mw-utils'

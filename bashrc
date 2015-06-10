@@ -18,3 +18,6 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 # You can use whatever you want as an alias, like for Mondays:
 alias FUCK='fuck'
+
+#Adding android-studio to path
+export PATH="${PATH}:/home/nikulaj/Documents/AndroidStudio/android-studio/bin/"
