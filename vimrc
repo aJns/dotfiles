@@ -17,10 +17,10 @@ Plugin 'tpope/vim-sleuth'           " checks file for tab settings etc
 Plugin 'Valloric/YouCompleteMe'     " auto-completion
 
 " My own set
-Plugin 'fholgado/minibufexpl.vim'   " "tab" support
+Plugin 'fholgado/minibufexpl.vim'   " 'tab' support
 Plugin 'wincent/Command-T'          " improves file searches
 Plugin 'tpope/vim-fugitive'         " git support
-Plugin 'Raimondi/delimitMate'   " auto-pairs (for brackets etc)
+Plugin 'Raimondi/delimitMate'       " auto-pairs (for brackets etc)
 Plugin 'majutsushi/tagbar'          " shows classes and functions
 Plugin 'scrooloose/nerdcommenter'   " support for comment blocks
 Plugin 'lervag/vimtex'              " Latex plugin
@@ -33,10 +33,7 @@ Plugin 'honza/vim-snippets'         " code snippets
 Plugin 'airblade/vim-rooter'        " sets working directory to project root
 
 " Colorschemes etc
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'andrwb/vim-lapis256'
-Plugin 'vim-scripts/Liquid-Carbon'
-
+Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
 
 
 
@@ -46,6 +43,8 @@ let g:UltiSnipsExpandTrigger="<c-space>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+" Airline powerline symbol set up
+let g:airline_powerline_fonts = 1
 
 "
 " " All of your Plugins must be added before the following line
@@ -55,7 +54,7 @@ filetype plugin indent on    " required
 
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
-colorscheme lapis256        " set colorscheme
+colorscheme luna        " set colorscheme
 set background=dark         " ensure dark background
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
