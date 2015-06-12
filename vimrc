@@ -20,8 +20,7 @@ Plugin 'Valloric/YouCompleteMe'     " auto-completion
 Plugin 'fholgado/minibufexpl.vim'   " "tab" support
 Plugin 'wincent/Command-T'          " improves file searches
 Plugin 'tpope/vim-fugitive'         " git support
-" Plugin 'scrooloose/nerdtree'        " file browser
-Plugin 'vim-scripts/simple-pairs'   " auto-pairs (for brackets etc)
+Plugin 'Raimondi/delimitMate'   " auto-pairs (for brackets etc)
 Plugin 'majutsushi/tagbar'          " shows classes and functions
 Plugin 'scrooloose/nerdcommenter'   " support for comment blocks
 Plugin 'lervag/vimtex'              " Latex plugin
@@ -29,52 +28,30 @@ Plugin 'vim-scripts/c.vim'          " C++ plugin
 Plugin 'bling/vim-airline'          " cool looking statusbar #bling
 Plugin 'neilagabriel/vim-geeknote'  " Geeknote integration
 Plugin 'tfnico/vim-gradle'          " gradle integration
-
-" vim-snipmate with dependencies
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-" Optional:
-Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'           " code snippets
+Plugin 'honza/vim-snippets'         " code snippets
+Plugin 'airblade/vim-rooter'        " sets working directory to project root
 
 " Colorschemes etc
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'andrwb/vim-lapis256'
 Plugin 'vim-scripts/Liquid-Carbon'
 
-" " The following are examples of different formats supported.
-" " Keep Plugin commands between vundle#begin/end.
-" " plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" " plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" " Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" " git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" " The sparkup vim script is in a subdirectory of this repo called vim.
-" " Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" " Avoid a name conflict with L9
-" Plugin 'user/L9', {'name': 'newL9'}
+
+
+
+" Ultisnips conf
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-space>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-set omnifunc=syntaxcomplete#Complete    " enables omni completion
-" " To ignore plugin indent changes, instead use:
-" "filetype plugin on
-" "
-" " Brief help
-" " :PluginList       - lists configured plugins
-" " :PluginInstall    - installs plugins; append `!` to update or just
-" :PluginUpdate
-" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" " :PluginClean      - confirms removal of unused plugins; append `!` to
-" auto-approve removal
-" "
-" " see :h vundle for more details or wiki for FAQ
-" " Put your non-Plugin stuff after this line
+" set omnifunc=syntaxcomplete#Complete    " enables omni completion
 
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
