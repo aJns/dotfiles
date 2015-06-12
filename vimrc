@@ -26,7 +26,6 @@ Plugin 'majutsushi/tagbar'          " shows classes and functions
 Plugin 'scrooloose/nerdcommenter'   " support for comment blocks
 Plugin 'lervag/vimtex'              " Latex plugin
 Plugin 'vim-scripts/c.vim'          " C++ plugin
-Plugin 'ervandew/eclim'             " eclipse for vim, Java support
 Plugin 'bling/vim-airline'          " cool looking statusbar #bling
 
 " vim-snipmate with dependencies
