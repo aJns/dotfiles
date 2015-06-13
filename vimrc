@@ -31,6 +31,7 @@ Plugin 'tfnico/vim-gradle'          " gradle integration
 Plugin 'SirVer/ultisnips'           " code snippets
 Plugin 'honza/vim-snippets'         " code snippets
 Plugin 'airblade/vim-rooter'        " sets working directory to project root
+Plugin 'jplaut/vim-arduino-ino'     " arduino integration using 'ino'
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
@@ -46,11 +47,19 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " Airline powerline symbol set up
 let g:airline_powerline_fonts = 1
 
+" mapping Tagbar toggle to F8
+nmap <F8> :TagbarToggle<CR>
+
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " set omnifunc=syntaxcomplete#Complete    " enables omni completion
+
+"   open recent files list on start
+" autocmd VimEnter * browse old
+
+
 
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
