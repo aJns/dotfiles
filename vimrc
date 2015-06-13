@@ -32,6 +32,7 @@ Plugin 'SirVer/ultisnips'           " code snippets
 Plugin 'honza/vim-snippets'         " code snippets
 Plugin 'airblade/vim-rooter'        " sets working directory to project root
 Plugin 'jplaut/vim-arduino-ino'     " arduino integration using 'ino'
+Plugin 'yegappan/mru'               " Most Recently Used files
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
