@@ -28,11 +28,14 @@ Plugin 'vim-scripts/c.vim'          " C++ plugin
 Plugin 'bling/vim-airline'          " cool looking statusbar #bling
 Plugin 'neilagabriel/vim-geeknote'  " Geeknote integration
 Plugin 'tfnico/vim-gradle'          " gradle integration
-Plugin 'SirVer/ultisnips'           " code snippets
+Plugin 'SirVer/ultisnips'           " code snippet engine
 Plugin 'honza/vim-snippets'         " code snippets
 Plugin 'airblade/vim-rooter'        " sets working directory to project root
 Plugin 'jplaut/vim-arduino-ino'     " arduino integration using 'ino'
 Plugin 'yegappan/mru'               " Most Recently Used files
+Plugin 'xolox/vim-misc'             " lua plugin needs this
+Plugin 'xolox/vim-lua-ftplugin'     " lua integration
+Plugin 'python-rope/ropevim'        " python refactoring
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
@@ -51,14 +54,9 @@ let g:airline_powerline_fonts = 1
 " mapping Tagbar toggle to F8
 nmap <F8> :TagbarToggle<CR>
 
-"
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" set omnifunc=syntaxcomplete#Complete    " enables omni completion
-
-"   open recent files list on start
-" autocmd VimEnter * browse old
 
 
 
