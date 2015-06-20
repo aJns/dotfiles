@@ -35,7 +35,6 @@ Plugin 'jplaut/vim-arduino-ino'     " arduino integration using 'ino'
 Plugin 'yegappan/mru'               " Most Recently Used files
 Plugin 'xolox/vim-misc'             " lua plugin needs this
 Plugin 'xolox/vim-lua-ftplugin'     " lua integration
-Plugin 'python-rope/ropevim'        " python refactoring
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
