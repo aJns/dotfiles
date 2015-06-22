@@ -17,12 +17,12 @@ Plugin 'tpope/vim-sleuth'           " checks file for tab settings etc
 Plugin 'Valloric/YouCompleteMe'     " auto-completion
 
 " My own set
-Plugin 'fholgado/minibufexpl.vim'   " 'tab' support
+" Plugin 'fholgado/minibufexpl.vim'   " 'tab' support
 Plugin 'wincent/Command-T'          " improves file searches
 Plugin 'tpope/vim-fugitive'         " git support
 Plugin 'Raimondi/delimitMate'       " auto-pairs (for brackets etc)
 Plugin 'majutsushi/tagbar'          " shows classes and functions
-Plugin 'scrooloose/nerdcommenter'   " support for comment blocks
+Plugin 'tpope/vim-commentary'       " commenting
 Plugin 'lervag/vimtex'              " Latex plugin
 Plugin 'vim-scripts/c.vim'          " C++ plugin
 Plugin 'bling/vim-airline'          " cool looking statusbar #bling
