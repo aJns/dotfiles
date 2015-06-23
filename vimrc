@@ -17,7 +17,7 @@ Plugin 'tpope/vim-sleuth'           " checks file for tab settings etc
 Plugin 'Valloric/YouCompleteMe'     " auto-completion
 
 " My own set
-Plugin 'fholgado/minibufexpl.vim'   " 'tab' support
+" Plugin 'fholgado/minibufexpl.vim'   " 'tab' support
 Plugin 'wincent/Command-T'          " improves file searches
 Plugin 'tpope/vim-fugitive'         " git support
 Plugin 'Raimondi/delimitMate'       " auto-pairs (for brackets etc)
@@ -75,6 +75,6 @@ set softtabstop=4           " unify
 set shiftwidth=4            " indent/outdent by 4 columns
 set shiftround              " always indent/outdent to the nearest tabstop
 set expandtab               " use spaces instead of tabs
-set smarttab                " use tabs at the start of a line, spaces elsewhere
+" set smarttab                " use tabs at the start of a line, spaces elsewhere
 set nowrap                  " don't wrap text
 set colorcolumn=80          " Shows a "margin" at 80 chars
