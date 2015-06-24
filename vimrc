@@ -34,11 +34,14 @@ Plugin 'yegappan/mru'               " Most Recently Used files
 Plugin 'xolox/vim-misc'             " lua plugin needs this
 Plugin 'xolox/vim-lua-ftplugin'     " lua integration
 Plugin 'mhinz/vim-startify'         " fancy startscreen
+Plugin 'xolox/vim-notes'            " vim-notes for taking notes
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
 
-
+" Vim-notes conf
+let g:notes_directories=["/home/nikulaj/Dropbox/notes/"]
+let g:notes_suffix = '.markdown'
 
 " Ultisnips conf
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
