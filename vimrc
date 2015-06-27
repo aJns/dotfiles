@@ -39,15 +39,18 @@ Plugin 'xolox/vim-notes'            " vim-notes for taking notes
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
 
+" Eclim autocompletion in YCM
+let g:EclimCompletionMethod = 'omnifunc'
+
 " Vim-notes conf
 let g:notes_directories=["/home/nikulaj/Dropbox/notes/"]
 let g:notes_suffix = '.markdown'
 
 " Ultisnips conf
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<c-space>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<C-Enter>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Airline powerline symbol set up
 let g:airline_powerline_fonts = 1
