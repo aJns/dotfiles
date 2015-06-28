@@ -11,36 +11,42 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Fennekki recommends
-Plugin 'scrooloose/syntastic'       " syntax support
-Plugin 'tpope/vim-vinegar'          " enchances netrw (no need for NERDTree)
-Plugin 'tpope/vim-sleuth'           " checks file for tab settings etc
-Plugin 'Valloric/YouCompleteMe'     " auto-completion
+Plugin 'scrooloose/syntastic'           " syntax support
+Plugin 'tpope/vim-vinegar'              " enchances netrw (no need for NERDTree)
+Plugin 'tpope/vim-sleuth'               " checks file for tab settings etc
+Plugin 'Valloric/YouCompleteMe'         " auto-completion
 
 " My own set
-Plugin 'wincent/Command-T'          " improves file searches
-Plugin 'tpope/vim-fugitive'         " git support
-Plugin 'Raimondi/delimitMate'       " auto-pairs (for brackets etc)
-Plugin 'majutsushi/tagbar'          " shows classes and functions
-Plugin 'tpope/vim-commentary'       " commenting
-Plugin 'lervag/vimtex'              " Latex plugin
-Plugin 'vim-scripts/c.vim'          " C++ plugin
-Plugin 'bling/vim-airline'          " cool looking statusbar #bling
-Plugin 'tfnico/vim-gradle'          " gradle integration
-Plugin 'SirVer/ultisnips'           " code snippet engine
-Plugin 'honza/vim-snippets'         " code snippets
-Plugin 'airblade/vim-rooter'        " sets working directory to project root
-Plugin 'jplaut/vim-arduino-ino'     " arduino integration using 'ino'
-Plugin 'yegappan/mru'               " Most Recently Used files
-Plugin 'xolox/vim-misc'             " lua plugin needs this
-Plugin 'xolox/vim-lua-ftplugin'     " lua integration
-Plugin 'mhinz/vim-startify'         " fancy startscreen
-Plugin 'xolox/vim-notes'            " vim-notes for taking notes
+Plugin 'wincent/Command-T'              " improves file searches
+Plugin 'tpope/vim-fugitive'             " git support
+Plugin 'Raimondi/delimitMate'           " auto-pairs (for brackets etc)
+Plugin 'majutsushi/tagbar'              " shows classes and functions
+Plugin 'tpope/vim-commentary'           " commenting
+Plugin 'lervag/vimtex'                  " Latex plugin
+Plugin 'vim-scripts/c.vim'              " C++ plugin
+Plugin 'bling/vim-airline'              " cool looking statusbar #bling
+Plugin 'tfnico/vim-gradle'              " gradle integration
+Plugin 'SirVer/ultisnips'               " code snippet engine
+Plugin 'honza/vim-snippets'             " code snippets
+Plugin 'airblade/vim-rooter'            " sets working directory to project root
+Plugin 'jplaut/vim-arduino-ino'         " arduino integration using 'ino'
+Plugin 'yegappan/mru'                   " Most Recently Used files
+Plugin 'xolox/vim-misc'                 " lua plugin needs this
+Plugin 'xolox/vim-lua-ftplugin'         " lua integration
+Plugin 'mhinz/vim-startify'             " fancy startscreen
+Plugin 'xolox/vim-notes'                " vim-notes for taking notes
+Plugin 'raymond-w-ko/vim-lua-indent'    " better lua indentation
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
 
 " Eclim autocompletion in YCM
 let g:EclimCompletionMethod = 'omnifunc'
+
+" Lua autocomplete setup
+let g:lua_complete_omni = 1
+let g:lua_define_completefunc = 0
+let g:lua_define_omnifunc = 0
 
 " Vim-notes conf
 let g:notes_directories=["/home/nikulaj/Dropbox/notes/"]
