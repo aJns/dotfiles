@@ -68,6 +68,9 @@ nmap <F8> :TagbarToggle<CR>
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" Force .md to be recognized as markdown instead of modula-2
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
 
 
 set t_Co=256                " enable 256-color mode.
