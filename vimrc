@@ -64,6 +64,9 @@ let g:airline_powerline_fonts = 1
 " mapping Tagbar toggle to F8
 nmap <F8> :TagbarToggle<CR>
 
+" Ycm global compile flags file
+let g:ycm_global_ycm_extra_conf = '/home/nikulaj/.vim/ycm_extra_conf.py'
+
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -71,7 +74,9 @@ filetype plugin indent on    " required
 " Force .md to be recognized as markdown instead of modula-2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-
+" proper C indentation
+set cindent
+set cinoptions=g-1
 
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).

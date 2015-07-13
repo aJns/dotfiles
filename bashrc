@@ -21,3 +21,7 @@ alias FUCK='fuck'
 
 bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
+
+#Wine variables
+export WINEPREFIX=$HOME/.config/wine/
+export WINEARCH=win32
