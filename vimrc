@@ -22,7 +22,7 @@ Plugin 'tpope/vim-fugitive'             " git support
 Plugin 'Raimondi/delimitMate'           " auto-pairs (for brackets etc)
 Plugin 'majutsushi/tagbar'              " shows classes and functions
 Plugin 'tpope/vim-commentary'           " commenting
-Plugin 'lervag/vimtex'                  " Latex plugin
+" Plugin 'lervag/vimtex'                  " Latex plugin
 Plugin 'vim-scripts/c.vim'              " C++ plugin
 Plugin 'bling/vim-airline'              " cool looking statusbar #bling
 Plugin 'tfnico/vim-gradle'              " gradle integration
@@ -36,6 +36,7 @@ Plugin 'xolox/vim-lua-ftplugin'         " lua integration
 Plugin 'mhinz/vim-startify'             " fancy startscreen
 Plugin 'xolox/vim-notes'                " vim-notes for taking notes
 Plugin 'raymond-w-ko/vim-lua-indent'    " better lua indentation
+Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
@@ -70,6 +71,13 @@ let g:ycm_global_ycm_extra_conf = '/home/nikulaj/.vim/ycm_extra_conf.py'
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" Vim latexsuite settings ---------------------------------------------------
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
+" set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+" Vim latexsuite settings ---------------------------------------------------
+
 
 " Force .md to be recognized as markdown instead of modula-2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
