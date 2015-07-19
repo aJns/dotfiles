@@ -22,8 +22,6 @@ Plugin 'tpope/vim-fugitive'             " git support
 Plugin 'Raimondi/delimitMate'           " auto-pairs (for brackets etc)
 Plugin 'majutsushi/tagbar'              " shows classes and functions
 Plugin 'tpope/vim-commentary'           " commenting
-" Plugin 'lervag/vimtex'                  " Latex plugin
-Plugin 'vim-scripts/c.vim'              " C++ plugin
 Plugin 'bling/vim-airline'              " cool looking statusbar #bling
 Plugin 'tfnico/vim-gradle'              " gradle integration
 Plugin 'SirVer/ultisnips'               " code snippet engine
@@ -40,6 +38,7 @@ Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
+Plugin 'vim-scripts/CSApprox'       " Terminal colors match gui
 
 " Eclim autocompletion in YCM
 let g:EclimCompletionMethod = 'omnifunc'
@@ -84,7 +83,7 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " proper C indentation
 set cindent
-set cinoptions=g-1
+set cinoptions=g0
 
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
@@ -96,7 +95,7 @@ set nohlsearch              " Don't continue to highlight searched phrases.
 set incsearch               " But do highlight as you type your search.
 set ignorecase              " Make searches case-insensitive.
 set ruler                   " Always show info along bottom.
-set autoindent              " auto-indent
+" set autoindent              " auto-indent
 set tabstop=4               " tab spacing
 set softtabstop=4           " unify
 set shiftwidth=4            " indent/outdent by 4 columns
