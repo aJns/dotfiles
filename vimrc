@@ -67,9 +67,15 @@ nmap <F8> :TagbarToggle<CR>
 " Ycm global compile flags file
 let g:ycm_global_ycm_extra_conf = '/home/nikulaj/.vim/ycm_extra_conf.py'
 
-" " All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
+" Syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Vim latexsuite settings ---------------------------------------------------
 set grepprg=grep\ -nH\ $*
@@ -77,6 +83,9 @@ let g:tex_flavor = "latex"
 " set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
 " Vim latexsuite settings ---------------------------------------------------
 
+" " All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " Force .md to be recognized as markdown instead of modula-2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown

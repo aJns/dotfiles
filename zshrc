@@ -34,8 +34,8 @@ antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Load the theme.
-# antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
-antigen theme agnoster
+antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+# antigen theme agnoster
 
 # Tell antigen that you're done.
 antigen apply
