@@ -42,6 +42,8 @@ Plugin 'vim-scripts/CSApprox'       " Terminal colors match gui
 
 " Eclim autocompletion in YCM
 let g:EclimCompletionMethod = 'omnifunc'
+" Disable eclim for C
+let g:EclimCValidate = 0
 
 " Lua autocomplete setup
 let g:lua_complete_omni = 1
@@ -52,11 +54,13 @@ let g:lua_define_omnifunc = 0
 let g:notes_directories=["/home/nikulaj/Dropbox/notes/"]
 let g:notes_suffix = '.markdown'
 
-" Ultisnips conf
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<C-Enter>"
-" let g:UltiSnipsJumpForwardTrigger="<c-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<tab>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<s-tab>"
+let g:UltiSnipsJumpBackwardTrigger = ""
 
 " Airline powerline symbol set up
 let g:airline_powerline_fonts = 1
@@ -93,15 +97,17 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " My own mappings
-nnoremap <Enter> za        " Toggle folds with enter
-nnoremap <BS> zA
+nnoremap <Enter> zA         " Toggle folds with enter
+nnoremap <BS> za
 let mapleader = "\<Space>"  " Map space as leader
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>  " For local replace
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>      " For global replace
 
 " Force .md to be recognized as markdown instead of modula-2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " proper C indentation
-set cindent
+autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
 set cinoptions=g0
 
 set path+=/usr/include/**
@@ -116,6 +122,7 @@ set incsearch               " But do highlight as you type your search.
 set ignorecase              " Make searches case-insensitive.
 set ruler                   " Always show info along bottom.
 set foldmethod=indent       " Fold on indents
+set autoindent
 set tabstop=4               " tab spacing
 set softtabstop=4           " unify
 set shiftwidth=4            " indent/outdent by 4 columns
