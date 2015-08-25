@@ -35,6 +35,7 @@ Plugin 'mhinz/vim-startify'             " fancy startscreen
 Plugin 'xolox/vim-notes'                " vim-notes for taking notes
 Plugin 'raymond-w-ko/vim-lua-indent'    " better lua indentation
 Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
+Plugin 'vim-scripts/c.vim'              " C++ integration
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
@@ -54,8 +55,8 @@ let g:lua_define_omnifunc = 0
 let g:notes_directories=["/home/nikulaj/Dropbox/notes/"]
 let g:notes_suffix = '.markdown'
 
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<tab>', '<C-n>', '<Down>']
+" make YCM compatible with UltiSnips
+" let g:ycm_key_list_select_completion = ['<tab>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 
 " better key bindings for UltiSnipsExpandTrigger
@@ -110,7 +111,12 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
 set cinoptions=g0
 
+" Add include its subdirectories recursively to path
 set path+=/usr/include/**
+" Only show popup menu on auto-completion
+set completeopt=menuone
+
+
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
 colorscheme luna            " set colorscheme
