@@ -17,7 +17,7 @@ Plugin 'tpope/vim-sleuth'               " checks file for tab settings etc
 Plugin 'Valloric/YouCompleteMe'         " auto-completion
 
 " My own set
-Plugin 'wincent/Command-T'              " improves file searches
+" Plugin 'wincent/Command-T'              " improves file searches
 Plugin 'tpope/vim-fugitive'             " git support
 Plugin 'Raimondi/delimitMate'           " auto-pairs (for brackets etc)
 Plugin 'majutsushi/tagbar'              " shows classes and functions
@@ -36,6 +36,7 @@ Plugin 'xolox/vim-notes'                " vim-notes for taking notes
 Plugin 'raymond-w-ko/vim-lua-indent'    " better lua indentation
 Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
 Plugin 'vim-scripts/c.vim'              " C++ integration
+Plugin 'vim-scripts/TaskList.vim'       " Plugin for tracking todos and fixmes
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
