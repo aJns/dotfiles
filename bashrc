@@ -25,3 +25,7 @@ bind "set show-all-if-ambiguous on"
 #Wine variables
 export WINEPREFIX=$HOME/.config/wine/
 export WINEARCH=win32
+
+export QSYS_ROOTDIR="/home/nikulaj/altera/15.0/quartus/sopc_builder/bin"
+
+export ALTERAOCLSDKROOT="/home/nikulaj/altera/15.0/hld"
