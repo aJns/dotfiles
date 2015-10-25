@@ -113,6 +113,9 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
 set cinoptions=g0
 
+" proper cmake commentstring
+autocmd FileType cmake setlocal commentstring=#\ %s
+
 " Add include its subdirectories recursively to path
 set path+=/usr/include/**
 " Only show popup menu on auto-completion
