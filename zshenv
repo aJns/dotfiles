@@ -8,3 +8,6 @@ export CXX=clang++
 # Wine variables
 export WINEPREFIX=$HOME/.config/wine/
 export WINEARCH=win32
+
+# Modelsim variables
+PATH+=:~/altera/15.0/modelsim_ase/linuxaloem
