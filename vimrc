@@ -38,6 +38,8 @@ Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
 Plugin 'vim-scripts/c.vim'              " C++ integration
 Plugin 'vim-scripts/TaskList.vim'       " Plugin for tracking todos and fixmes
 Plugin 'hynek/vim-python-pep8-indent'   " Proper python indentation
+Plugin 'peterhoeg/vim-qml'              " QML highlighting
+Plugin 'rdnetto/YCM-Generator'          " What it says on the tin
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
