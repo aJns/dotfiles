@@ -118,6 +118,9 @@ set cinoptions=g0
 " proper cmake commentstring
 autocmd FileType cmake setlocal commentstring=#\ %s
 
+" proper vhdl commentstring
+autocmd FileType vhdl setlocal commentstring=--\ %s
+
 " Add include its subdirectories recursively to path
 set path+=/usr/include/**
 " Only show popup menu on auto-completion
