@@ -40,10 +40,11 @@ Plugin 'vim-scripts/TaskList.vim'       " Plugin for tracking todos and fixmes
 Plugin 'hynek/vim-python-pep8-indent'   " Proper python indentation
 Plugin 'peterhoeg/vim-qml'              " QML highlighting
 Plugin 'rdnetto/YCM-Generator'          " What it says on the tin
+Plugin 'vim-scripts/VHDL-indent-93-syntax' " Proper VHDL indentation
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
-Plugin 'vim-scripts/CSApprox'       " Terminal colors match gui
+Plugin 'KevinGoodsell/vim-csexact'   " Terminal colors match gui
 
 " Eclim autocompletion in YCM
 let g:EclimCompletionMethod = 'omnifunc'
