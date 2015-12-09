@@ -44,7 +44,8 @@ Plugin 'vim-scripts/VHDL-indent-93-syntax' " Proper VHDL indentation
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
-Plugin 'KevinGoodsell/vim-csexact'   " Terminal colors match gui
+" Plugin 'KevinGoodsell/vim-csexact'  " Terminal colors match gui (not needed with vim-hybrid)
+Plugin 'w0ng/vim-hybrid'            " vim-hybrid colorscheme
 
 " Eclim autocompletion in YCM
 let g:EclimCompletionMethod = 'omnifunc'
@@ -127,11 +128,13 @@ set path+=/usr/include/**
 " Only show popup menu on auto-completion
 set completeopt=menuone
 
+" colorscheme
+let g:hybrid_use_Xresources = 1     " Use the colours from Xresources (for gvim)
+set background=dark                 " Ensure dark background
+colorscheme hybrid                  " Set colorscheme
 
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
-colorscheme luna            " set colorscheme
-set background=dark         " ensure dark background
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
 set nohlsearch              " Don't continue to highlight searched phrases.
