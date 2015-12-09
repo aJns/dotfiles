@@ -133,7 +133,7 @@ set completeopt=menuone
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
 set background=dark         " Ensure dark background
-colorscheme solarized       " Set colorscheme
+colorscheme Monokai         " Set colorscheme
 
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
