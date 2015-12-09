@@ -43,9 +43,10 @@ Plugin 'rdnetto/YCM-Generator'          " What it says on the tin
 Plugin 'vim-scripts/VHDL-indent-93-syntax' " Proper VHDL indentation
 
 " Colorschemes etc
-Plugin 'flazz/vim-colorschemes'     " Collection of colorschemes
-" Plugin 'KevinGoodsell/vim-csexact'  " Terminal colors match gui (not needed with vim-hybrid)
-Plugin 'w0ng/vim-hybrid'            " vim-hybrid colorscheme
+Plugin 'flazz/vim-colorschemes'             " Collection of colorschemes
+" Plugin 'KevinGoodsell/vim-csexact'        " Terminal colors match gui (not needed with vim-hybrid)
+Plugin 'vim-scripts/CSApprox'               " ^^ didn't work with solarized
+Plugin 'altercation/vim-colors-solarized'   " solarized, because I have no mind of my own
 
 " Eclim autocompletion in YCM
 let g:EclimCompletionMethod = 'omnifunc'
@@ -129,12 +130,11 @@ set path+=/usr/include/**
 set completeopt=menuone
 
 " colorscheme
-let g:hybrid_use_Xresources = 1     " Use the colours from Xresources (for gvim)
-set background=dark                 " Ensure dark background
-colorscheme hybrid                  " Set colorscheme
-
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
+set background=dark         " Ensure dark background
+colorscheme solarized       " Set colorscheme
+
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
 set nohlsearch              " Don't continue to highlight searched phrases.
