@@ -41,6 +41,7 @@ Plugin 'hynek/vim-python-pep8-indent'   " Proper python indentation
 Plugin 'peterhoeg/vim-qml'              " QML highlighting
 Plugin 'rdnetto/YCM-Generator'          " What it says on the tin
 Plugin 'vim-scripts/VHDL-indent-93-syntax' " Proper VHDL indentation
+Plugin 'rking/ag.vim'                   " Fork of ack.vim, tailored for Ag (''the silver searcher'')
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'             " Collection of colorschemes
