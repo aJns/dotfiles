@@ -42,6 +42,7 @@ Plugin 'peterhoeg/vim-qml'              " QML highlighting
 Plugin 'rdnetto/YCM-Generator'          " What it says on the tin
 Plugin 'vim-scripts/VHDL-indent-93-syntax' " Proper VHDL indentation
 Plugin 'rking/ag.vim'                   " Fork of ack.vim, tailored for Ag (''the silver searcher'')
+Plugin 'eagletmt/neco-ghc'              " Haskell autocomplete
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'             " Collection of colorschemes
@@ -106,8 +107,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " My own mappings
-nnoremap <Enter> zA         " Toggle folds with enter
-nnoremap <BS> za
+nnoremap <BS> zA            " Toggle folds with backspace
 let mapleader = "\<Space>"  " Map space as leader
 nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>  " For local replace
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>      " For global replace
@@ -129,6 +129,9 @@ autocmd FileType vhdl setlocal commentstring=--\ %s
 set path+=/usr/include/**
 " Only show popup menu on auto-completion
 set completeopt=menuone
+" Start explore-mode (netrw) in a tree view
+let g:netrw_liststyle=3
+
 
 " colorscheme
 set t_Co=256                " enable 256-color mode.
