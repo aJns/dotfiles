@@ -26,7 +26,7 @@ Plugin 'bling/vim-airline'              " cool looking statusbar #bling
 Plugin 'tfnico/vim-gradle'              " gradle integration
 Plugin 'SirVer/ultisnips'               " code snippet engine
 Plugin 'honza/vim-snippets'             " code snippets
-Plugin 'airblade/vim-rooter'            " sets working directory to project root
+" Plugin 'airblade/vim-rooter'            " sets working directory to project root
 Plugin 'jplaut/vim-arduino-ino'         " arduino integration using 'ino'
 Plugin 'yegappan/mru'                   " Most Recently Used files
 Plugin 'xolox/vim-misc'                 " lua plugin needs this
@@ -40,9 +40,11 @@ Plugin 'vim-scripts/TaskList.vim'       " Plugin for tracking todos and fixmes
 Plugin 'hynek/vim-python-pep8-indent'   " Proper python indentation
 Plugin 'peterhoeg/vim-qml'              " QML highlighting
 Plugin 'rdnetto/YCM-Generator'          " What it says on the tin
-Plugin 'vim-scripts/VHDL-indent-93-syntax' " Proper VHDL indentation
+" Plugin 'vim-scripts/VHDL-indent-93-syntax' " Proper VHDL indentation
 Plugin 'rking/ag.vim'                   " Fork of ack.vim, tailored for Ag (''the silver searcher'')
 Plugin 'eagletmt/neco-ghc'              " Haskell autocomplete
+Plugin 'sophacles/vim-processing'       " Processing plugin
+Plugin 'dhruvasagar/vim-table-mode'     " table mode
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'             " Collection of colorschemes
@@ -96,6 +98,9 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_include_dirs = ['/usr/include/**']
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_remove_include_errors = 1
+
+" VHDL indent settings
+let g:vhdl_indent_genportmap = 0
 
 " Vim latexsuite settings
 set grepprg=grep\ -nH\ $*

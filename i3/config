@@ -150,7 +150,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-	font pango:Inconsolata 11
+	font pango:Inconsolata 10
         colors {
                 background #262626
                 statusline #dadada
