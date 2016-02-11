@@ -1,6 +1,3 @@
-!XTerm*reverseVideo: on
-/* XTerm*foreground: rgb:da/da/da */
-/* XTerm*background: rgb:26/26/26 */
 XTerm*selectToClipboard: true
 XTerm*faceName: Inconsolata\ for\ Powerline:size=11:antialias=true
 XTerm*font: 7x13
