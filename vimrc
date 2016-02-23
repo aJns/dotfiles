@@ -45,6 +45,7 @@ Plugin 'rking/ag.vim'                   " Fork of ack.vim, tailored for Ag (''th
 Plugin 'eagletmt/neco-ghc'              " Haskell autocomplete
 Plugin 'sophacles/vim-processing'       " Processing plugin
 Plugin 'dhruvasagar/vim-table-mode'     " table mode
+Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'             " Collection of colorschemes
@@ -81,7 +82,7 @@ let g:airline_powerline_fonts = 1
 nmap <F8> :TagbarToggle<CR>
 
 " Ycm global compile flags file
-let g:ycm_global_ycm_extra_conf = '/home/nikulaj/.vim/ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/dotfiles/ycm_extra_conf.py'
 " YCM uses ctags
 let g:ycm_collect_identifiers_from_tags_files = 1
 
