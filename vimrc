@@ -98,13 +98,13 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" let g:syntastic_cpp_check_header = 1
-" let g:syntastic_cpp_remove_include_errors = 1
+let g:syntastic_cpp_include_dirs = ['/usr/include/**', '/usr/avr/include/**']
+let g:syntastic_mode_map = { 'passive_filetypes': ['c', 'cpp'] }
 
 " neomake
-autocmd! BufWritePost,BufEnter * Neomake
-" let g:syntastic_cpp_include_dirs = ['/usr/include/**', '/usr/avr/include/**']
-" let g:syntastic_mode_map = { 'passive_filetypes': ['c', 'cpp'] }
+" autocmd! BufWritePost,BufEnter * Neomake
+" let g:neomake_verbose=3
+" let g:neomake_open_list = 2
 
 " VHDL indent settings
 let g:vhdl_indent_genportmap = 0
@@ -134,6 +134,7 @@ autocmd FileType vhdl setlocal commentstring=--\ %s
 
 " Add include its subdirectories recursively to path
 set path+=/usr/include/**
+set path+=/usr/avr/include/**
 " Only show popup menu on auto-completion
 set completeopt=menuone
 " Start explore-mode (netrw) in a tree view
