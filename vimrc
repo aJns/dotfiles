@@ -46,6 +46,8 @@ Plugin 'eagletmt/neco-ghc'              " Haskell autocomplete
 Plugin 'sophacles/vim-processing'       " Processing plugin
 Plugin 'dhruvasagar/vim-table-mode'     " table mode
 Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
+Plugin 'benekastah/neomake'             " async linter
+Plugin 'vim-latex/vim-latex'            " latex plugin
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'             " Collection of colorschemes
@@ -96,17 +98,15 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_cpp_include_dirs = ['/usr/include/**']
-let g:syntastic_cpp_check_header = 1
-let g:syntastic_cpp_remove_include_errors = 1
+" let g:syntastic_cpp_include_dirs = ['/usr/include/**']
+" let g:syntastic_cpp_check_header = 1
+" let g:syntastic_cpp_remove_include_errors = 1
+
+" neomake
+autocmd! BufWritePost,BufEnter * Neomake
 
 " VHDL indent settings
 let g:vhdl_indent_genportmap = 0
-
-" Vim latexsuite settings
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor = "latex"
-" set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
