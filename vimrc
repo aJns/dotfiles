@@ -98,12 +98,13 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" let g:syntastic_cpp_include_dirs = ['/usr/include/**']
 " let g:syntastic_cpp_check_header = 1
 " let g:syntastic_cpp_remove_include_errors = 1
 
 " neomake
 autocmd! BufWritePost,BufEnter * Neomake
+" let g:syntastic_cpp_include_dirs = ['/usr/include/**', '/usr/avr/include/**']
+" let g:syntastic_mode_map = { 'passive_filetypes': ['c', 'cpp'] }
 
 " VHDL indent settings
 let g:vhdl_indent_genportmap = 0
