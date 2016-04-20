@@ -48,12 +48,16 @@ Plugin 'dhruvasagar/vim-table-mode'     " table mode
 Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
 Plugin 'benekastah/neomake'             " async linter
 Plugin 'vim-latex/vim-latex'            " latex plugin
+Plugin 'sirtaj/vim-openscad'            " OpenSCAD syntax
 
 " Colorschemes etc
 Plugin 'flazz/vim-colorschemes'             " Collection of colorschemes
 " Plugin 'KevinGoodsell/vim-csexact'        " Terminal colors match gui (not needed with vim-hybrid)
 Plugin 'vim-scripts/CSApprox'               " ^^ didn't work with solarized
 Plugin 'altercation/vim-colors-solarized'   " solarized, because I have no mind of my own
+
+" default vimchant language
+let g:vimchant_spellcheck_lang = 'fi'
 
 " Eclim autocompletion in YCM
 let g:EclimCompletionMethod = 'omnifunc'
@@ -132,6 +136,10 @@ autocmd FileType cmake setlocal commentstring=#\ %s
 " proper vhdl commentstring
 autocmd FileType vhdl setlocal commentstring=--\ %s
 
+" autowrap text in latex and plaintex
+autocmd FileType tex set tw=79
+autocmd FileType plaintex set tw=79
+
 " Add include its subdirectories recursively to path
 set path+=/usr/include/**
 set path+=/usr/avr/include/**
@@ -145,7 +153,8 @@ let g:netrw_liststyle=3
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
 set background=dark         " Ensure dark background
-colorscheme Monokai         " Set colorscheme
+" colorscheme Monokai         " Set colorscheme
+colorscheme janah           " Set colorscheme
 
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
