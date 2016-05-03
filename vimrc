@@ -171,3 +171,4 @@ set shiftround              " always indent/outdent to the nearest tabstop
 set expandtab               " use spaces instead of tabs
 set nowrap                  " don't wrap text
 set colorcolumn=80          " Shows a "margin" at 80 chars
+set scrolloff=5             " keeps 5 lines below and above cursor if possible
