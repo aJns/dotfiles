@@ -29,27 +29,15 @@ Plugin 'vim-scripts/TaskList.vim'       " Plugin for tracking todos and fixmes
 Plugin 'mileszs/ack.vim'                " Use ack in vim
 Plugin 'dhruvasagar/vim-table-mode'     " table mode
 Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
-Plugin 'xolox/vim-notes'                " vim-notes for taking notes
 Plugin 'SirVer/ultisnips'               " code snippet engine
 Plugin 'honza/vim-snippets'             " code snippets
+Plugin 'dkprice/vim-easygrep'           " find and replace
 
 " Language specific plugins
 Plugin 'Valloric/YouCompleteMe'         " auto-completion for C family
-Plugin 'tfnico/vim-gradle'              " gradle integration
-Plugin 'jplaut/vim-arduino-ino'         " arduino integration using 'ino'
-Plugin 'xolox/vim-misc'                 " lua plugin needs this
-Plugin 'xolox/vim-lua-ftplugin'         " lua integration
-Plugin 'raymond-w-ko/vim-lua-indent'    " better lua indentation
 Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
-Plugin 'vim-scripts/c.vim'              " C++ integration
-Plugin 'hynek/vim-python-pep8-indent'   " Proper python indentation
-Plugin 'peterhoeg/vim-qml'              " QML highlighting
-Plugin 'rdnetto/YCM-Generator'          " What it says on the tin
 Plugin 'eagletmt/neco-ghc'              " Haskell autocomplete
-Plugin 'sophacles/vim-processing'       " Processing plugin
-Plugin 'benekastah/neomake'             " async linter
 Plugin 'vim-latex/vim-latex'            " latex plugin
-Plugin 'sirtaj/vim-openscad'            " OpenSCAD syntax
 
 " default vimchant language
 let g:vimchant_spellcheck_lang = 'fi'
@@ -58,15 +46,6 @@ let g:vimchant_spellcheck_lang = 'fi'
 let g:EclimCompletionMethod = 'omnifunc'
 " Disable eclim for C
 let g:EclimCValidate = 0
-
-" Lua autocomplete setup
-let g:lua_complete_omni = 1
-let g:lua_define_completefunc = 0
-let g:lua_define_omnifunc = 0
-
-" Vim-notes conf
-let g:notes_directories=["/home/nikulaj/Dropbox/notes/"]
-let g:notes_suffix = '.markdown'
 
 " make YCM compatible with UltiSnips
 " let g:ycm_key_list_select_completion = ['<tab>', '<C-n>', '<Down>']
@@ -96,17 +75,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-let g:syntastic_cpp_include_dirs = ['/usr/include/**', '/usr/avr/include/**']
-let g:syntastic_mode_map = { 'passive_filetypes': ['c', 'cpp'] }
-
-" neomake
-" autocmd! BufWritePost,BufEnter * Neomake
-" let g:neomake_verbose=3
-" let g:neomake_open_list = 2
-
-" VHDL indent settings
-let g:vhdl_indent_genportmap = 0
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
