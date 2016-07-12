@@ -1,3 +1,4 @@
+" Plugins and their settings
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -10,51 +11,45 @@ call vundle#begin()
 " " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Fennekki recommends
+" Colorschemes etc
+Plugin 'bling/vim-airline'              " cool looking statusbar #bling
+Plugin 'flazz/vim-colorschemes'             " Collection of colorschemes
+Plugin 'vim-scripts/CSApprox'               " Colorschemes look (about) the same in gui and term
+
+" Generic plugins
 Plugin 'scrooloose/syntastic'           " syntax support
 Plugin 'tpope/vim-vinegar'              " enchances netrw (no need for NERDTree)
 Plugin 'tpope/vim-sleuth'               " checks file for tab settings etc
-Plugin 'Valloric/YouCompleteMe'         " auto-completion
-
-" My own set
-" Plugin 'wincent/Command-T'              " improves file searches
 Plugin 'tpope/vim-fugitive'             " git support
 Plugin 'Raimondi/delimitMate'           " auto-pairs (for brackets etc)
 Plugin 'majutsushi/tagbar'              " shows classes and functions
 Plugin 'tpope/vim-commentary'           " commenting
-Plugin 'bling/vim-airline'              " cool looking statusbar #bling
-Plugin 'tfnico/vim-gradle'              " gradle integration
+Plugin 'mhinz/vim-startify'             " fancy startscreen
+Plugin 'vim-scripts/TaskList.vim'       " Plugin for tracking todos and fixmes
+Plugin 'mileszs/ack.vim'                " Use ack in vim
+Plugin 'dhruvasagar/vim-table-mode'     " table mode
+Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
+Plugin 'xolox/vim-notes'                " vim-notes for taking notes
 Plugin 'SirVer/ultisnips'               " code snippet engine
 Plugin 'honza/vim-snippets'             " code snippets
-" Plugin 'airblade/vim-rooter'            " sets working directory to project root
+
+" Language specific plugins
+Plugin 'Valloric/YouCompleteMe'         " auto-completion for C family
+Plugin 'tfnico/vim-gradle'              " gradle integration
 Plugin 'jplaut/vim-arduino-ino'         " arduino integration using 'ino'
-Plugin 'yegappan/mru'                   " Most Recently Used files
 Plugin 'xolox/vim-misc'                 " lua plugin needs this
 Plugin 'xolox/vim-lua-ftplugin'         " lua integration
-Plugin 'mhinz/vim-startify'             " fancy startscreen
-Plugin 'xolox/vim-notes'                " vim-notes for taking notes
 Plugin 'raymond-w-ko/vim-lua-indent'    " better lua indentation
 Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
 Plugin 'vim-scripts/c.vim'              " C++ integration
-Plugin 'vim-scripts/TaskList.vim'       " Plugin for tracking todos and fixmes
 Plugin 'hynek/vim-python-pep8-indent'   " Proper python indentation
 Plugin 'peterhoeg/vim-qml'              " QML highlighting
 Plugin 'rdnetto/YCM-Generator'          " What it says on the tin
-" Plugin 'vim-scripts/VHDL-indent-93-syntax' " Proper VHDL indentation
-Plugin 'rking/ag.vim'                   " Fork of ack.vim, tailored for Ag (''the silver searcher'')
 Plugin 'eagletmt/neco-ghc'              " Haskell autocomplete
 Plugin 'sophacles/vim-processing'       " Processing plugin
-Plugin 'dhruvasagar/vim-table-mode'     " table mode
-Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
 Plugin 'benekastah/neomake'             " async linter
 Plugin 'vim-latex/vim-latex'            " latex plugin
 Plugin 'sirtaj/vim-openscad'            " OpenSCAD syntax
-
-" Colorschemes etc
-Plugin 'flazz/vim-colorschemes'             " Collection of colorschemes
-" Plugin 'KevinGoodsell/vim-csexact'        " Terminal colors match gui (not needed with vim-hybrid)
-Plugin 'vim-scripts/CSApprox'               " ^^ didn't work with solarized
-Plugin 'altercation/vim-colors-solarized'   " solarized, because I have no mind of my own
 
 " default vimchant language
 let g:vimchant_spellcheck_lang = 'fi'
@@ -117,7 +112,9 @@ let g:vhdl_indent_genportmap = 0
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" My own mappings
+
+
+" My own mappings and settings
 nnoremap <BS> zA            " Toggle folds with backspace
 let mapleader = "\<Space>"  " Map space as leader
 nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>  " For local replace
@@ -125,10 +122,6 @@ nnoremap gR gD:%s/<C-R>///gc<left><left><left>      " For global replace
 
 " Force .md to be recognized as markdown instead of modula-2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
-" proper C indentation
-autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
-set cinoptions=g0
 
 " proper cmake commentstring
 autocmd FileType cmake setlocal commentstring=#\ %s
@@ -153,9 +146,9 @@ let g:netrw_liststyle=3
 set t_Co=256                " enable 256-color mode.
 syntax enable               " enable syntax highlighting (previously syntax on).
 set background=dark         " Ensure dark background
-" colorscheme Monokai         " Set colorscheme
 colorscheme janah           " Set colorscheme
 
+" other settings
 set number                  " show line numbers
 set laststatus=2            " last window always has a statusline
 set nohlsearch              " Don't continue to highlight searched phrases.
@@ -173,3 +166,5 @@ set nowrap                  " don't wrap text
 set colorcolumn=80          " Shows a "margin" at 80 chars
 set scrolloff=5             " keeps 5 lines below and above cursor if possible
 set cino+=(0                " Aligns function arguments nicely
+
+
