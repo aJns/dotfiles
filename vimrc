@@ -28,16 +28,21 @@ Plugin 'mhinz/vim-startify'             " fancy startscreen
 Plugin 'vim-scripts/TaskList.vim'       " Plugin for tracking todos and fixmes
 Plugin 'mileszs/ack.vim'                " Use ack in vim
 Plugin 'dhruvasagar/vim-table-mode'     " table mode
-Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
 Plugin 'SirVer/ultisnips'               " code snippet engine
 Plugin 'honza/vim-snippets'             " code snippets
 Plugin 'dkprice/vim-easygrep'           " find and replace
+Plugin 'xolox/vim-misc'                 " required by other plugins
+
+" Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
+Plugin 'xolox/vim-easytags'             " easier tags
+Plugin 'kien/ctrlp.vim'                 " goto
 
 " Language specific plugins
 Plugin 'Valloric/YouCompleteMe'         " auto-completion for C family
 Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
 Plugin 'eagletmt/neco-ghc'              " Haskell autocomplete
 Plugin 'vim-latex/vim-latex'            " latex plugin
+Plugin 'itchyny/vim-haskell-indent'     " what it says on the tin
 
 " default vimchant language
 let g:vimchant_spellcheck_lang = 'fi'
@@ -75,6 +80,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
