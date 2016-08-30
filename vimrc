@@ -33,12 +33,13 @@ Plugin 'honza/vim-snippets'             " code snippets
 Plugin 'dkprice/vim-easygrep'           " find and replace
 Plugin 'xolox/vim-misc'                 " required by other plugins
 
-" Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
-Plugin 'xolox/vim-easytags'             " easier tags
+Plugin 'szw/vim-tags'                   " automated generation of ctags, WHY DIDN'T I FIND THIS BEFORE NOW?????
+" Plugin 'xolox/vim-easytags'             " easier tags, seems to be slow though
 Plugin 'kien/ctrlp.vim'                 " goto
 
 " Language specific plugins
 Plugin 'Valloric/YouCompleteMe'         " auto-completion for C family
+Plugin 'rdnetto/YCM-Generator'
 Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
 Plugin 'eagletmt/neco-ghc'              " Haskell autocomplete
 Plugin 'vim-latex/vim-latex'            " latex plugin
