@@ -44,6 +44,7 @@ Plugin 'vim-scripts/Vimchant'           " Spellchecking using enchant
 Plugin 'eagletmt/neco-ghc'              " Haskell autocomplete
 Plugin 'vim-latex/vim-latex'            " latex plugin
 Plugin 'itchyny/vim-haskell-indent'     " what it says on the tin
+Plugin 'racer-rust/vim-racer'           " Rust racer support
 
 " default vimchant language
 let g:vimchant_spellcheck_lang = 'fi'
