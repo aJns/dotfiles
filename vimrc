@@ -83,6 +83,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_python_checkers = ['flake8']
+
 
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -108,6 +110,9 @@ autocmd FileType vhdl setlocal commentstring=--\ %s
 " autowrap text in latex and plaintex
 autocmd FileType tex set tw=79
 autocmd FileType plaintex set tw=79
+
+" default filetype for .tex is latex instead of plaintex
+let g:tex_flavor = "latex"
 
 " Add include its subdirectories recursively to path
 set path+=/usr/include/**
