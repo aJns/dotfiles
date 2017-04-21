@@ -11,3 +11,6 @@ export WINEARCH=win32
 
 # eclimd
 PATH+=:~/apps/eclipse
+
+# esp toolchain
+PATH=$PATH:~/tools/esp-open-sdk/xtensa-lx106-elf/bin
